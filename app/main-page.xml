@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-blue-900">
+    <ActionBar title="Fruit Slice" class="bg-blue-800 text-white" />
+    
+    <AbsoluteLayout touch="{{ onTouch }}" pan="{{ onPan }}">
+        <!-- Score display -->
+        <Label text="{{ 'Score: ' + currentScore }}" 
+               class="text-2xl text-white font-bold"
+               top="20" left="20" />
+
+        <!-- Fruits container -->
+        <Repeater items="{{ visibleFruits }}">
+            <Repeater.itemTemplate>
+                <Label text="{{ type }}"
+                       left="{{ x }}"
+                       top="{{ y }}"
+                       class="text-4xl"
+                       opacity="{{ sliced ? '0.5' : '1' }}"
+                       rotate="{{ sliced ? '90' : '0' }}" />
+            </Repeater.itemTemplate>
+        </Repeater>
+    </AbsoluteLayout>
+</Page>
