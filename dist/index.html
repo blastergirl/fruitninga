@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Ninja</title>
+  
+  <script type="module" crossorigin src="./assets/index-f68b3caf.js"></script>
+  <link rel="stylesheet" href="./assets/index-b5af9569.css">
+</head>
+<body class="bg-gray-900">
+  <div id="game-area">
+    <div id="ui-overlay">
+      <div id="score-container">
+        <div id="score">Score: 0</div>
+        <div id="shortcuts">Press <span>Tab</span> for shop • <span>Space</span> to pause</div>
+      </div>
+      <div id="gems">Gems: 0</div>
+      <div id="game-controls">
+        <button id="pause-btn" class="control-btn">
+          <span class="icon">⏸️</span>
+          <span class="key">Space</span>
+        </button>
+        <button id="play-btn" class="control-btn">
+          <span class="icon">▶️</span>
+          <span class="key">P</span>
+        </button>
+        <button id="restart-btn" class="control-btn">
+          <span class="icon">🔄</span>
+          <span class="key">R</span>
+        </button>
+        <div class="speed-control">
+          <button id="speed-down" class="control-btn">
+            <span class="icon">🐢</span>
+            <span class="key">-</span>
+          </button>
+          <div id="speed-display">1x</div>
+          <button id="speed-up" class="control-btn">
+            <span class="icon">🐰</span>
+            <span class="key">+</span>
+          </button>
+        </div>
+      </div>
+      <div id="shop" class="fixed bottom-4 left-4 w-64 space-y-2"></div>
+    </div>
+  </div>
+  
+</body>
+</html> 
